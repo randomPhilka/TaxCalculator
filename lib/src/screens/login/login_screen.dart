@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tax_calculator/src/screens/home/ui/home_screen.dart';
 import '../../../generated/l10n.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -68,7 +69,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   backgroundColor: Theme.of(context).primaryColor,
                 ).copyWith(elevation: ButtonStyleButton.allOrNull(0.0)),
                 onPressed: () {
-                  
+                  final route = MaterialPageRoute(builder: (_) => const HomeScreen());
+                  Navigator.of(context).push(route);
                 },
                 child: Text(S.of(context).loginGoogleButton),
               ),
