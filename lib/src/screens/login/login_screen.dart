@@ -67,7 +67,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   foregroundColor: const Color(0xffEC7088),
                   backgroundColor: Theme.of(context).primaryColor,
                 ).copyWith(elevation: ButtonStyleButton.allOrNull(0.0)),
-                onPressed: () {},
+                onPressed: () {
+                  
+                },
                 child: Text(S.of(context).loginGoogleButton),
               ),
               const Expanded(
@@ -79,4 +81,6 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
+
+
 }
