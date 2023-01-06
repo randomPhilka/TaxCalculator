@@ -1,10 +1,12 @@
 import 'package:flutter/foundation.dart';
-import '../../endpoints.dart';
-import '../../networkClient.dart';
-import '../../../../exchangeRate.dart';
+import '../../../network/endpoints.dart';
+import '../../../network/networkClient.dart';
+import '../model/exchangeRate.dart';
 
 class AddTaxApi {
   final NetworkClient networkClient;
+
+  AddTaxApi({required this.networkClient});
 
   Future<double> getLariExchangeRateFor(DateTime date) async {
     try {
